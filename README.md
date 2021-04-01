@@ -18,7 +18,7 @@ Every passwords are stored locally and crypted using AES hash algorythm.
 • We do not **store** your passwords  
 • We do not **track** your connections  
 
-## Instalation  
+## Installation  
 
 ```sh
 git clone https://github.com/YutoMusic/password-manager.git
