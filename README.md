@@ -3,7 +3,7 @@
 
 ## General Presentation
 
-__password-manager__ is a desktop app that allow you to create and store passwords.  
+<ins>password-manager</ins> is a desktop app that allow you to create and store passwords.  
 It can also modify and delete existing password. 
 Every passwords are stored locally and crypted using AES hash algorythm.
 
@@ -30,13 +30,11 @@ pip install -r requirements.txt
 
 *this tool is still in its development stage so nothing work for now*
 
-````sh
+```sh
 cd source
 python3 storage.py 
 ```
 
 ## License   
 
-*None*   
-
-
+*None*  
