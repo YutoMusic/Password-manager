@@ -1,5 +1,6 @@
 import os
-import hashlib
+# import hashlib
+import bcrypt
 
 """
 TODO : 
@@ -7,20 +8,16 @@ TODO :
     transfer the password string from the password generator
 """
 
-password = 'HelloWorld'
+password = b'HelloWorld'
+
+
+def hash_password (password : str) -> str :
+    return bcrypt.hashpw(password, bcrypt.gensalt())
+
 
 def store_in_file (password : str) : 
     file = open('password.txt', "w")
     file.write(hash_password(password))
     file.close()
 
-
-def hash_password (password : str) -> str :
-    return hashlib.md5(password.encode()).hexdigest()
-
-
-if __name__ == "__main__" : 
-    store_in_file(password)
-
-# print(hash_password('test'))
 
